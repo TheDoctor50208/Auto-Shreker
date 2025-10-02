@@ -2,8 +2,8 @@ import os
 import random
 import ctypes
 
-# Folder path containing images
-image_folder = r'~\Archive\'
+# Folder path containing images (relative to script location)
+image_folder = os.path.join(os.path.dirname(__file__), 'Archive')
 
 # Check if folder exists
 if not os.path.exists(image_folder):
@@ -32,4 +32,3 @@ if result:
     print(f"Wallpaper successfully set to: {selected_image}")
 else:
     print(f"Error: Failed to set wallpaper to {selected_image}")
-input()
