@@ -3,7 +3,7 @@ import random
 import ctypes
 
 # Folder path containing images
-image_folder = r'C:\Path\To\Your\ImageFolder'
+image_folder = r'\Archive'
 
 # Check if folder exists
 if not os.path.exists(image_folder):
